@@ -40,7 +40,7 @@ export default function ChatInterface() {
 
   return (
     <Card className="w-full max-w-2xl mx-auto shadow-lg">
-      <CardHeader className="border-b bg-muted/40">
+      <CardHeader className="border-b bg-gray-800">
         <CardTitle className="text-2xl font-bold">Customer Support Chat</CardTitle>
       </CardHeader>
       <CardContent className="p-0">
