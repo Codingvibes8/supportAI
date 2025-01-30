@@ -30,6 +30,14 @@ export default function ChatInterface() {
   const [showFeedback, setShowFeedback] = useState(false)
   const [lastMessageId, setLastMessageId] = useState<string | null>(null)
 
+  /**
+   * Handles the submission of the chat message form
+   *
+   * Prevents the default form submission behavior, and only calls the
+   * `handleSubmit` callback if the input is not empty.
+   *
+   * @param e - The React form event
+   */
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (input.trim()) {
@@ -40,11 +48,11 @@ export default function ChatInterface() {
 
   return (
     <Card className="w-full max-w-2xl mx-auto shadow-lg">
-      <CardHeader className="border-b bg-gray-800">
+      <CardHeader className="border-b">
         <CardTitle className="text-2xl font-bold">Customer Support Chat</CardTitle>
       </CardHeader>
       <CardContent className="p-0">
-        <ScrollArea className="h-[60vh] p-4">
+        <ScrollArea className="h-[25vh] p-4">
           {messages.map((m) => (
             <div key={m.id} className={`mb-4 flex items-start ${m.role === "user" ? "justify-end" : "justify-start"}`}>
               {m.role !== "user" && (

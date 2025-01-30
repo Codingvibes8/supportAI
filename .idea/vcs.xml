@@ -2,22 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../alpha" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../blogtest" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../dayoblogs" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../elecspace" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../fashion/fashion-store" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../foodcart" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../grocery-shop-floor" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../jettest" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../locks-shop" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../musicapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../project_ai_mern_image_generation" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../sushi-haven" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../sushi-prod" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../testrunfolder" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../testsanity/music-festival" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../testsanity/sanity-nextjs-app" vcs="Git" />
   </component>
 </project>

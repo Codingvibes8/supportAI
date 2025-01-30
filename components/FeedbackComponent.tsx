@@ -8,23 +8,6 @@ interface FeedbackComponentProps {
   onFeedbackSubmit: () => void
 }
 
-
-/**
- * A form to submit feedback for a given message id.
- *
- * When the form is submitted, the `onFeedbackSubmit` function is called.
- *
- * @param {string} messageId - the id of the message to provide feedback for
- * @param {Function} onFeedbackSubmit - a function to call when the feedback has been submitted
- *
- * @example
- * import FeedbackComponent from "@/components/FeedbackComponent"
- *
- * <FeedbackComponent
- *   messageId="123"
- *   onFeedbackSubmit={() => console.log("Feedback submitted!")}
- * />
- */
 export default function FeedbackComponent({ messageId, onFeedbackSubmit }: FeedbackComponentProps) {
   const [feedback, setFeedback] = useState("")
   const { submitFeedback, isSubmitting } = useFeedback()

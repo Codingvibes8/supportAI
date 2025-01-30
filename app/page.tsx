@@ -1,25 +1,20 @@
 import ChatInterface from "@/components/ChatInterface"
-
-/**
- * The Home component renders the main landing page for the SupportAI application.
- *
- * This component displays a welcome message and a brief description of the service
- * provided by SupportAI. It also incorporates the ChatInterface component to allow
- * users to start a conversation with the AI-powered chatbot.
- *
- * @returns A JSX element representing the home page of the SupportAI application.
- */
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="max-w-2xl mx-auto mb-8 text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to SupportAI</h1>
-        <p className="text-xl text-muted-foreground">
-          Get instant support with our AI-powered chatbot. Start a conversation below!
-        </p>
-      </div>
-      <ChatInterface />
+    <div className="container mx-auto px-4 py-20 min-h-screen">
+      <Card>
+        <CardHeader>
+          <CardTitle className="px-8 text-3xl mx-auto bg-slate-100 max-w-2xl font-bold text-center dark:bg-gray-600 dark:rounded-lg p-2">Welcome to SupportAI</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-center mb-16">
+            Get instant support with our AI-powered chatbot. Start a conversation below!
+          </p>
+          <ChatInterface />
+        </CardContent>
+      </Card>
     </div>
   )
 }
